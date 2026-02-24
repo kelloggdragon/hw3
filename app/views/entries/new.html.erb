@@ -1,7 +1,7 @@
-<h1>New Entry for <%= @place.name %></h1>
+<h1>New Entry for <%= @place["name"] %></h1>
 
 <form action="/entries" method="post">
-  <input type="hidden" name="place_id" value="<%= @entry.place_id %>">
+  <input type="hidden" name="place_id" value="<%= @entry["place_id"] %>">
   
   <div>
     <label for="title">Title</label>
