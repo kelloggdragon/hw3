@@ -15,10 +15,7 @@
   </p>
 
   <!-- transfer state from the previous action to the next -->
-  <p>
-    <label for="place_id">Place</label>
-    <input type="text" name="place_id" value="<%= @place["id"] %>">
-  </p>
+  <input type="hidden" name="place_id" value="<%= @place["id"] %>">
   <button>Submit</button>
 </form>
 
